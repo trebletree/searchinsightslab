@@ -2,6 +2,8 @@
 
 This is a standard static HTML site. It does not require Node, React, npm, or a build command.
 
+The homepage and included subpage template contain a `noindex, nofollow` robots directive. Keep that directive while the site should remain out of search results, and remove it before public indexing is desired.
+
 ## Files
 
 - index.html is the homepage and must remain in the repository root.
@@ -18,6 +20,10 @@ To create /services/combined-visibility-audit/:
 3. Rename the copied file to index.html.
 4. Edit its title, description, headline, and page content.
 5. Link to it with href="/services/combined-visibility-audit/".
+
+## Clean report URLs
+
+For reports and client pages, use a folder containing an `index.html` file. For example, `client-name/index.html` publishes at `/client-name/` without `.htaccess` or rewrite rules.
 
 ## GitHub
 
